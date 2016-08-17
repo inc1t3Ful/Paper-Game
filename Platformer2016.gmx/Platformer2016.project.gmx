@@ -8,10 +8,14 @@
   <sprites name="sprites">
     <sprite>sprites\spr_still</sprite>
     <sprite>sprites\spr_wave</sprite>
-    <sprite>sprites\sprite5</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_menu</background>
+  </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fnt_default</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_scottstill</object>
     <object>objects\obj_scottwave</object>
