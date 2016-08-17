@@ -6,21 +6,29 @@ switch(mpos)
 
     case 0: 
     {
-        room_goto_next();
+        room_goto(rm_level1);
         break;
     }
   
     case 1:
     {
-        break;
+       room_goto(rm_lvlselect);
+       break;
     }
     
     case 2:
     {
-        break;
+       room_goto(rm_option); 
+       break;
     }
     
     case 3:
+    {
+        room_goto(rm_controls);
+        break;
+    }
+    
+    case 4:
     {
         game_end();
         break;

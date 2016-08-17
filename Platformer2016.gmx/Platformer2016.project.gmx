@@ -10,6 +10,9 @@
     <sprite>sprites\spr_wave</sprite>
     <sprite>sprites\spr_cursor</sprite>
     <sprite>sprites\spr_title</sprite>
+    <sprite>sprites\spr_optionTitle</sprite>
+    <sprite>sprites\spr_controlTitle</sprite>
+    <sprite>sprites\spr_lvlselectTitle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_default</background>
@@ -17,6 +20,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_menu.gml</script>
+    <script>scripts\scr_option.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
@@ -24,12 +28,21 @@
   <objects name="objects">
     <object>objects\obj_scottstill</object>
     <object>objects\obj_scottwave</object>
-    <object>objects\obj_start</object>
+    <object>objects\obj_menu</object>
     <object>objects\obj_title</object>
+    <object>objects\obj_option</object>
+    <object>objects\obj_optionTitle</object>
+    <object>objects\obj_back</object>
+    <object>objects\obj_controlTitle</object>
+    <object>objects\obj_controls</object>
+    <object>objects\ovj_lvlselectTitle</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_level1</room>
+    <room>rooms\rm_lvlselect</room>
+    <room>rooms\rm_option</room>
+    <room>rooms\rm_controls</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
