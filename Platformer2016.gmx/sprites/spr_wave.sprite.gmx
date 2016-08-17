@@ -8,7 +8,7 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>128</bbox_right>
+  <bbox_right>139</bbox_right>
   <bbox_top>0</bbox_top>
   <bbox_bottom>211</bbox_bottom>
   <HTile>0</HTile>
@@ -17,7 +17,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>129</width>
+  <width>142</width>
   <height>212</height>
   <frames>
     <frame index="0">images\spr_wave_0.png</frame>
@@ -27,5 +27,8 @@
     <frame index="4">images\spr_wave_4.png</frame>
     <frame index="5">images\spr_wave_5.png</frame>
     <frame index="6">images\spr_wave_6.png</frame>
+    <frame index="7">images\spr_wave_7.png</frame>
+    <frame index="8">images\spr_wave_8.png</frame>
+    <frame index="9">images\spr_wave_9.png</frame>
   </frames>
 </sprite>
