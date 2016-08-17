@@ -9,8 +9,8 @@
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>139</bbox_right>
-  <bbox_top>0</bbox_top>
-  <bbox_bottom>211</bbox_bottom>
+  <bbox_top>6</bbox_top>
+  <bbox_bottom>209</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -30,5 +30,11 @@
     <frame index="7">images\spr_wave_7.png</frame>
     <frame index="8">images\spr_wave_8.png</frame>
     <frame index="9">images\spr_wave_9.png</frame>
+    <frame index="10">images\spr_wave_10.png</frame>
+    <frame index="11">images\spr_wave_11.png</frame>
+    <frame index="12">images\spr_wave_12.png</frame>
+    <frame index="13">images\spr_wave_13.png</frame>
+    <frame index="14">images\spr_wave_14.png</frame>
+    <frame index="15">images\spr_wave_15.png</frame>
   </frames>
 </sprite>
