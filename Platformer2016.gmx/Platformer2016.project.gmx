@@ -6,13 +6,14 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_still</sprite>
+    <sprite>sprites\spr_scottStill</sprite>
     <sprite>sprites\spr_wave</sprite>
     <sprite>sprites\spr_cursor</sprite>
     <sprite>sprites\spr_title</sprite>
     <sprite>sprites\spr_optionTitle</sprite>
     <sprite>sprites\spr_controlTitle</sprite>
     <sprite>sprites\spr_lvlselectTitle</sprite>
+    <sprite>sprites\spr_scottRun</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_default</background>
@@ -26,7 +27,7 @@
     <font>fonts\fnt_default</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_scottstill</object>
+    <object>objects\obj_scottStill</object>
     <object>objects\obj_scottwave</object>
     <object>objects\obj_menu</object>
     <object>objects\obj_title</object>
@@ -36,6 +37,7 @@
     <object>objects\obj_controlTitle</object>
     <object>objects\obj_controls</object>
     <object>objects\ovj_lvlselectTitle</object>
+    <object>objects\obj_scottRun</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
