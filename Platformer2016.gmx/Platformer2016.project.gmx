@@ -37,7 +37,7 @@
     <object>objects\obj_back</object>
     <object>objects\obj_controlTitle</object>
     <object>objects\obj_controls</object>
-    <object>objects\ovj_lvlselectTitle</object>
+    <object>objects\obj_lvlselectTitle</object>
     <object>objects\obj_scottRun</object>
     <object>objects\obj_block</object>
   </objects>
