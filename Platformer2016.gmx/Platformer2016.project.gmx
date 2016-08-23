@@ -7,13 +7,14 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_scottStill</sprite>
-    <sprite>sprites\spr_wave</sprite>
+    <sprite>sprites\spr_scottWave</sprite>
     <sprite>sprites\spr_cursor</sprite>
     <sprite>sprites\spr_title</sprite>
     <sprite>sprites\spr_optionTitle</sprite>
     <sprite>sprites\spr_controlTitle</sprite>
     <sprite>sprites\spr_lvlselectTitle</sprite>
     <sprite>sprites\spr_scottRun</sprite>
+    <sprite>sprites\spr_block</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_default</background>
@@ -28,7 +29,7 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_scottStill</object>
-    <object>objects\obj_scottwave</object>
+    <object>objects\obj_scottWave</object>
     <object>objects\obj_menu</object>
     <object>objects\obj_title</object>
     <object>objects\obj_option</object>
@@ -38,6 +39,7 @@
     <object>objects\obj_controls</object>
     <object>objects\ovj_lvlselectTitle</object>
     <object>objects\obj_scottRun</object>
+    <object>objects\obj_block</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
