@@ -25,12 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Initialise variables
-grav = 0.1;
+            <string>/// Initialise variables
+grav = 0.2;
 hsp = 0;
 vsp = 0;
-jumpspeed = 10;
-movespeed = 7;
+jumpspeed = 7;
+movespeed = 4;
 </string>
           </argument>
         </arguments>
@@ -64,17 +64,12 @@ key_jump = keyboard_check_pressed(vk_space);
 move = key_left + key_right; // will either be -1 or 1 depending on key input. WIll be 0 if both
 hsp = move * movespeed; // horizontal movespeed will be either -4 or 4, or 0
 
-if(vsp &lt; 10)
-{ 
 // Gravity contraint
-    vsp += grav;
-}
-
-// Vertical collision check
+if(vsp &lt; 10) vsp += grav;
 
 if(place_meeting(x, y+1, obj_block))
 {
-    vsp = key_jump * -jumpspeed;
+    vsp = key_jump * -jumpspeed
 }
 
 // Horizontal collision
@@ -87,23 +82,26 @@ if(place_meeting(x + hsp, y, obj_block))
     {
         x += sign(hsp);       
     }
-    hsp += 0;
+    hsp = 0;
 }
+
+x += hsp;
 
 // Vertical collision
 
-if(place_meeting(y + vsp, y, obj_block))
+if(place_meeting(x, y + vsp, obj_block))
 {   
     // same logic as above. Changed variables
     while(!place_meeting(x, y + sign(vsp), obj_block))
     {
         y += sign(vsp);
     }
-    vsp += 0;
+    vsp = 0;
 }
 
-x += hsp;
 y += vsp;
+
+
 
 </string>
           </argument>
