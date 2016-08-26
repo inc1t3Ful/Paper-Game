@@ -26,11 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialise variables
-grav = 0.2;
+grav = 0.5;
 hsp = 0;
 vsp = 0;
-jumpspeed = 7;
-movespeed = 4;
+jumpspeed = 15;
+movespeed = 8;
 </string>
           </argument>
         </arguments>
@@ -65,7 +65,7 @@ move = key_left + key_right; // will either be -1 or 1 depending on key input. W
 hsp = move * movespeed; // horizontal movespeed will be either -4 or 4, or 0
 
 // Gravity contraint
-if(vsp &lt; 10) vsp += grav;
+if(vsp &lt; 50) vsp += grav;
 
 if(place_meeting(x, y+1, obj_block))
 {
