@@ -32,7 +32,7 @@ draw_set_color(c_black);
 
 draw_text(x, y, string("Press UP, DOWN, LEFT, RIGHT to move"));
 draw_text(x, y + 64, string("Press SPACE to jump"));
-draw_text(x, y + 128, string("Press BACKSPACE for options"));
+draw_text(x, y + 128, string("Press ESC to pause"));
       
 
 </string>

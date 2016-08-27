@@ -27,9 +27,8 @@
             <kind>1</kind>
             <string>menu[0] = "Start";
 menu[1] = "Level Select";
-menu[2] = "Options";
-menu[3] = "Controls";
-menu[4] = "End Game";
+menu[2] = "Controls";
+menu[3] = "End Game";
 
 space = 64; // vertical spacing between items
 mpos = 0; // cursor starts on menu[0]

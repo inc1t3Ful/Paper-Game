@@ -26,11 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialise variables
-grav = 0.9;
+grav = 0.8;
 hsp = 0;
 vsp = 0;
 jumpspeed = 20;
-movespeed = 13;
+movespeed = 10;
 </string>
           </argument>
         </arguments>
