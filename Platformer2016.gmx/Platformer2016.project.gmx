@@ -9,7 +9,7 @@
     <sprite>sprites\spr_scottStill</sprite>
     <sprite>sprites\spr_cursor</sprite>
     <sprite>sprites\spr_title</sprite>
-    <sprite>sprites\spr_optionTitle</sprite>
+    <sprite>sprites\spr_pauseTitle</sprite>
     <sprite>sprites\spr_controlTitle</sprite>
     <sprite>sprites\spr_lvlselectTitle</sprite>
     <sprite>sprites\spr_scottRun</sprite>
@@ -22,7 +22,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_menu.gml</script>
-    <script>scripts\scr_option.gml</script>
+    <script>scripts\scr_pause.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
@@ -32,8 +32,8 @@
     <object>objects\obj_scottWave</object>
     <object>objects\obj_menu</object>
     <object>objects\obj_title</object>
-    <object>objects\obj_option</object>
-    <object>objects\obj_optionTitle</object>
+    <object>objects\obj_pause</object>
+    <object>objects\obj_pauseTitle</object>
     <object>objects\obj_back</object>
     <object>objects\obj_controlTitle</object>
     <object>objects\obj_controls</object>
@@ -45,7 +45,7 @@
     <room>rooms\rm_menu</room>
     <room>rooms\rm_level1</room>
     <room>rooms\rm_lvlselect</room>
-    <room>rooms\rm_option</room>
+    <room>rooms\rm_pause</room>
     <room>rooms\rm_controls</room>
   </rooms>
   <help>
