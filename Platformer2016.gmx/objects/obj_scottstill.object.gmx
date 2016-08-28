@@ -29,7 +29,7 @@
 grav = 0.8;
 hsp = 0;
 vsp = 0;
-jumpspeed = 25;
+jumpspeed = 28.5;
 movespeed = 10;
 </string>
           </argument>
@@ -104,12 +104,19 @@ y += vsp;
 
 // Changes direction of character (mirror) based on movement input
 if(move != 0) image_xscale = move;
-/*
+
+// Check collision. If on ground, play run loop. Else play air loop
 if(place_meeting(x, y+1, obj_block))
 {
+    // If moving, play run animation, otherwise play idle animation
     if(move != 0) sprite_index = spr_scottRun; else sprite_index = spr_scottStill;
 }
-*/
+else
+{
+    // If vertical speed is less than 0 aka not moving = jump, play jump animation.
+    // Otherwise play fall animation
+    if(vsp &lt; 0) sprite_index = spr_scottJump; else sprite_index = spr_scottFall;
+} 
 
 </string>
           </argument>

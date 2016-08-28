@@ -15,6 +15,9 @@
     <sprite>sprites\spr_scottRun</sprite>
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_scottWave</sprite>
+    <sprite>sprites\spr_scottTest</sprite>
+    <sprite>sprites\spr_scottJump</sprite>
+    <sprite>sprites\spr_scottFall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_default</background>
@@ -40,6 +43,7 @@
     <object>objects\obj_lvlselectTitle</object>
     <object>objects\obj_scottRun</object>
     <object>objects\obj_block</object>
+    <object>objects\obj_scottTest</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
