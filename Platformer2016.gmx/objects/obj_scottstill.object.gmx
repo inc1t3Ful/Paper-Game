@@ -4,9 +4,9 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_scottStill</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -26,11 +26,23 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialise variables
+
 grav = 0.8;
 hsp = 0;
 vsp = 0;
 jumpspeed = 28.5;
 movespeed = 10;
+
+// Checkpoint spawn logic
+
+// if current active checkpoint is NOT in this room when we already spawned
+// then there is no active checkpoint
+// AKA original spawn location
+if (global.checkpointR == room)
+{
+    x = global.checkpointx;
+    y = global.checkpointy;
+}
 </string>
           </argument>
         </arguments>
@@ -103,12 +115,14 @@ y += vsp;
 // Animate
 
 // Changes direction of character (mirror) based on movement input
+// scales horizontally the image by 100% or -100% based on left / right input
 if(move != 0) image_xscale = move;
 
 // Check collision. If on ground, play run loop. Else play air loop
 if(place_meeting(x, y+1, obj_block))
 {
     // If moving, play run animation, otherwise play idle animation
+    // Can change move to hsp to prevent run animation from playing when hitting wall
     if(move != 0) sprite_index = spr_scottRun; else sprite_index = spr_scottStill;
 }
 else
