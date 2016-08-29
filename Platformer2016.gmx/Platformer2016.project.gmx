@@ -6,18 +6,24 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_scottStill</sprite>
+    <sprites name="Scott">
+      <sprite>sprites\spr_scottStill</sprite>
+      <sprite>sprites\spr_scottWave</sprite>
+      <sprite>sprites\spr_scottRun</sprite>
+      <sprite>sprites\spr_scottJump</sprite>
+      <sprite>sprites\spr_scottFall</sprite>
+      <sprite>sprites\spr_scottTest</sprite>
+    </sprites>
+    <sprites name="Level Sprites">
+      <sprite>sprites\spr_block</sprite>
+      <sprite>sprites\spr_checkpoint</sprite>
+      <sprite>sprites\spr_checkpointActive</sprite>
+    </sprites>
     <sprite>sprites\spr_cursor</sprite>
     <sprite>sprites\spr_title</sprite>
     <sprite>sprites\spr_pauseTitle</sprite>
     <sprite>sprites\spr_controlTitle</sprite>
     <sprite>sprites\spr_lvlselectTitle</sprite>
-    <sprite>sprites\spr_scottRun</sprite>
-    <sprite>sprites\spr_block</sprite>
-    <sprite>sprites\spr_scottWave</sprite>
-    <sprite>sprites\spr_scottTest</sprite>
-    <sprite>sprites\spr_scottJump</sprite>
-    <sprite>sprites\spr_scottFall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_default</background>
@@ -31,26 +37,35 @@
     <font>fonts\fnt_default</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_scottStill</object>
-    <object>objects\obj_scottWave</object>
+    <objects name="Scott">
+      <object>objects\obj_scottStill</object>
+      <object>objects\obj_scottWave</object>
+      <object>objects\obj_scottRun</object>
+      <object>objects\obj_scottTest</object>
+    </objects>
+    <objects name="Level Objects">
+      <object>objects\obj_block</object>
+      <object>objects\obj_checkpoint</object>
+      <object>objects\obj_checkpointActive</object>
+    </objects>
+    <object>objects\obj_back</object>
+    <object>objects\obj_controls</object>
+    <object>objects\obj_controlTitle</object>
+    <object>objects\obj_lvlselectTitle</object>
     <object>objects\obj_menu</object>
-    <object>objects\obj_title</object>
     <object>objects\obj_pause</object>
     <object>objects\obj_pauseTitle</object>
-    <object>objects\obj_back</object>
-    <object>objects\obj_controlTitle</object>
-    <object>objects\obj_controls</object>
-    <object>objects\obj_lvlselectTitle</object>
-    <object>objects\obj_scottRun</object>
-    <object>objects\obj_block</object>
-    <object>objects\obj_scottTest</object>
+    <object>objects\obj_title</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
-    <room>rooms\rm_level1</room>
     <room>rooms\rm_lvlselect</room>
     <room>rooms\rm_pause</room>
     <room>rooms\rm_controls</room>
+    <rooms name="Levels">
+      <room>rooms\rm_initialise</room>
+      <room>rooms\rm_level1</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
