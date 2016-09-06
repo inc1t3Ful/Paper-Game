@@ -64,14 +64,14 @@
     <object>objects\obj_title</object>
   </objects>
   <rooms name="rooms">
-    <rooms name="Levels">
-      <room>rooms\rm_initialise</room>
-      <room>rooms\rm_level1</room>
-    </rooms>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_lvlselect</room>
     <room>rooms\rm_pause</room>
     <room>rooms\rm_controls</room>
+    <rooms name="Levels">
+      <room>rooms\rm_initialise</room>
+      <room>rooms\rm_level1</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
