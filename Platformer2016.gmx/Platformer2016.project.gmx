@@ -18,6 +18,7 @@
       <sprite>sprites\spr_block</sprite>
       <sprite>sprites\spr_checkpoint</sprite>
       <sprite>sprites\spr_checkpointActive</sprite>
+      <sprite>sprites\spr_portal</sprite>
     </sprites>
     <sprites name="Enemy Sprites">
       <sprite>sprites\spr_ghost</sprite>
@@ -35,6 +36,7 @@
   <scripts name="scripts">
     <script>scripts\scr_menu.gml</script>
     <script>scripts\scr_pause.gml</script>
+    <script>scripts\scr_loadGame.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
@@ -50,6 +52,7 @@
       <object>objects\obj_block</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_checkpointActive</object>
+      <object>objects\obj_portal</object>
     </objects>
     <objects name="Enemy Objects">
       <object>objects\obj_ghost</object>
@@ -71,6 +74,7 @@
     <rooms name="Levels">
       <room>rooms\rm_initialise</room>
       <room>rooms\rm_level1</room>
+      <room>rooms\rm_level2</room>
     </rooms>
   </rooms>
   <help>
