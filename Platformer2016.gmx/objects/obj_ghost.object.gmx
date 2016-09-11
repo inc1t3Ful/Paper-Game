@@ -31,6 +31,8 @@ movespeed = 2;
 grav = 0.2;
 hsp = 0;
 vsp = 0;
+
+fearofheights = 0;
 </string>
           </argument>
         </arguments>
@@ -86,11 +88,20 @@ if(place_meeting(x, y + vsp, obj_block))
         y += sign(vsp);
     }
     vsp = 0;
+    
+    // check if flag is on 
+    // check if the pixel at the edge of sprite in direction it is moving (X Coordinate)
+    // check an arbitrary number of pixels below feet to allow walking down slopes/small pixel edges (Y Coordinate) 
+    if (fearofheights) &amp;&amp; !position_meeting(x+(sprite_width/2)*dir, y+(sprite_height/2)+100, obj_block)
+    {
+        // change direction
+        dir *= -1;
+    }       
 }
 
 y += vsp;
 
-// Enemy Collision
+// Enemy Collision (aka with player)
 
 if(place_meeting(x, y, obj_scottStill))
 {
