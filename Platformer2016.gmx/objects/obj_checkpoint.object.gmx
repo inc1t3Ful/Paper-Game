@@ -59,6 +59,7 @@ if(place_meeting(x, y, obj_scottStill))
     global.checkpointR = room;
 }
 
+// If the checkpoint is in this room, change to active sprite
 if(global.checkpointR == room)
 {
     if(global.checkpoint == id)

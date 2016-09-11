@@ -119,6 +119,10 @@ if(place_meeting(x, y, obj_scottStill))
         room_goto(rm_initialise);
     }
     */
+    else
+    {
+        scr_death();
+    }
 }  
 
 // Animate

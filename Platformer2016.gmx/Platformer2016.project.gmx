@@ -37,6 +37,7 @@
     <script>scripts\scr_menu.gml</script>
     <script>scripts\scr_pause.gml</script>
     <script>scripts\scr_loadGame.gml</script>
+    <script>scripts\scr_death.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
