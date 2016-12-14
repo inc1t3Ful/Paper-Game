@@ -1,3 +1,6 @@
+/*
+Grace's Code
+
 switch(mpos){
     
     case 0:
@@ -17,7 +20,7 @@ switch(mpos){
         room_goto(rm_controls);
         break;
     }
-    
+
     case 3:
     {
         game_end();
@@ -26,3 +29,5 @@ switch(mpos){
     
     default: break;
 }
+
+*/
