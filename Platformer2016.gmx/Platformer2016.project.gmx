@@ -19,6 +19,7 @@
       <sprite>sprites\spr_checkpoint</sprite>
       <sprite>sprites\spr_checkpointActive</sprite>
       <sprite>sprites\spr_portal</sprite>
+      <sprite>sprites\spr_sign</sprite>
     </sprites>
     <sprites name="Enemy Sprites">
       <sprite>sprites\spr_ghost</sprite>
@@ -41,6 +42,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
+    <font>fonts\fnt_sign</font>
   </fonts>
   <objects name="objects">
     <objects name="Scott">
@@ -54,6 +56,7 @@
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_checkpointActive</object>
       <object>objects\obj_portal</object>
+      <object>objects\obj_sign</object>
     </objects>
     <objects name="Enemy Objects">
       <object>objects\obj_ghost</object>
